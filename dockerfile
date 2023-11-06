@@ -2,14 +2,14 @@ FROM  nvidia/cuda:12.2.2-devel-ubuntu22.04
 
 RUN apt update \
     && apt install -y \
-    wget \
-    bzip2\
+     \
+    \
     git\
-    curl\
-    unzip\
-    file\
-    xz-utils\
-    sudo\
+    \
+    \
+    \
+    \
+    \
     python3\
     python3-pip
 
@@ -20,3 +20,4 @@ COPY requirements.txt /tmp/
 
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
 
+COPY . /tmp/
